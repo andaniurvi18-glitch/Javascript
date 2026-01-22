@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Variables & Scope</title>
+</head>
+
+<body>
+
+  <h1>JavaScript Variables, Scope & Hoisting</h1>
+
+  <h2>Variable Declarations</h2>
+
+  <pre>
+var a = "temp";
+var _123 = "Hello";
+var $123 = "Hello";
+b = 24; // never use
+    </pre>
+
+  <h2>let Keyword</h2>
+
+  <pre>
+let temp = "abc";
+    </pre>
+
+  <h2>const Keyword</h2>
+
+  <pre>
+const temp_const = "Hello Word !!";
+// temp_const = "Hello"; // Not allowed
+    </pre>
+
+  <h2>Declarations and Initialization</h2>
+
+  <pre>
+var d;        // declare
+var d = 12;   // declare and initialize for first time
+
+// var is function scoped
+// var can be redeclared and reassigned
+
+d = 24;       // reassign
+var d = "Hello"; // redeclare
+    </pre>
+
+  <h2>Scope in JavaScript</h2>
+  <p>Types of Scope:</p>
+  <ul>
+    <li>Global Scope</li>
+    <li>Block Scope</li>
+    <li>Functional Scope</li>
+  </ul>
+
+  <h3>var Scope Example</h3>
+
+  <pre>
+var e = 23; // global scope
+{
+    var e = 25; // block scope (var ignores block scope)
+    console.log("block scope " + e);
+}
+
+function abc() 
+{
+        var e = 30; // functional scope
+        console.log("functional scope " + e);
+}
+abc();
+console.log(e);
+    </pre>
+
+  <h3>let Scope Example</h3>
+
+  <pre>
+let f = 23; // global scope
+{
+        let f = 25; // block scope
+        console.log("block scope " + f);
+}
+
+function abc() 
+{
+        let f = 30; // functional scope
+        console.log("functional scope " + f);
+}
+abc();
+console.log(f);
+</pre>
+
+  <h2>Temporal Dead Zone (TDZ)</h2>
+
+  <p>TDZ works with <strong>let</strong> and <strong>const</strong>, but not with <strong>var</strong>.</p>
+
+  <pre>
+    console.log(temp_b);
+    var temp_b = 24; // No TDZ for var
+
+    // console.log(j);
+    // let j = 12; // TDZ Error
+</pre>
+
+  <h2>Hoisting</h2>
+
+  <p>
+    Hoisting means JavaScript moves variable declarations to the top of the scope.
+  </p>
+  <pre>
+    var temp_d = 12;
+    // var temp_d;        --> hoisted (undefined)
+    // temp_d = 12;       --> stays in original line
+
+    let temp_d_let = 24;
+    // let variables cannot be used before initialization
+</pre>
+
+  <h3>Hoisting Impact Summary</h3>
+
+  <ul>
+    <li><strong>var</strong> → hoisted, value is <code>undefined</code></li>
+    <li><strong>let</strong> → hoisted, but TDZ error</li>
+    <li><strong>const</strong> → hoisted, but TDZ error</li>
+  </ul>
+
+  <div>
+    <h3>Example 1:</h3>
+    <p>console.log(nm);</p>
+    <p>let nm = "name"; </p>
+    <p>Error</p>
+    <p>Why: beacause we print console before initialization & use let keyword for declar variable.</p>
+
+  </div>
+  <div>
+    <h3>Example 2:</h3>
+    <p>console.log(b);</p>
+    <p>var b= "username"; </p>
+    <p>Answer or Error: </p>
+    <p>Why: beacause we print console before initialization & use var keyword for declar variable.</p>
+  </div>
+
+
+  <br>
+  <h3>Example 3:</h3>
+  <p>var x = 1;</p>
+  <p>
+    {
+    var x= 2;
+    }
+  </p>
+  <p>console.log(x);</p>
+  <p>Answer or Error: </p>
+  <p>Why: beacause where we use var than in console print block scope. </p>
+  </div>
+
+
+  <div>
+    <h3>Example 4:</h3>
+    <p>leta 10; </p>
+    <p> {
+      let a = 20;
+      console.log("Inside:", a);
+      }
+    </p>
+    <p>
+      console.log("Outside:", a);
+    </p>
+    <p>Answer or Error: </p>
+    <p>Why: beacause in console first block scope after print global scope.</p>
+  </div>
+
+  <h1>JavaScript Data Types</h1>
+
+  <h2>Data Types</h2>
+  <p>There are two types of Data Types in JavaScript.</p>
+
+
+  <h3>1. Primitive Data Types</h3>
+  <p><strong>Copy by Value (Real value is copied)</strong></p>
+
+  <pre>
+let a = 12;
+let b = a; // a --> 12
+a = a + 3;
+    </pre>
+
+  <h4>Primitive Data Types List:</h4>
+  <ul>
+    <li>string</li>
+    <li>number</li>
+    <li>boolean</li>
+    <li>null</li>
+    <li>undefined</li>
+    <li>symbol</li>
+    <li>bigint</li>
+  </ul>
+
+  <h3>String</h3>
+  <pre>
+let d = "name";      // double quotes
+d = 'username';     // single quotes
+d = `firstname`;    // backticks
+    </pre>
+
+  <h3>Number</h3>
+  <pre>
+let e = 12;
+e = 12.25;
+    </pre>
+
+  <h3>Boolean</h3>
+  <pre>
+let g = true;
+g = false;
+    </pre>
+
+  <h3>Null</h3>
+  <p>A value is assigned, but it is empty</p>
+  <pre>
+let t = null;
+    </pre>
+
+  <h3>Undefined</h3>
+  <p>If no value is assigned, the default value is undefined</p>
+  <pre>
+let h;
+    </pre>
+
+  <h3>Symbol</h3>
+  <p>Unique and Immutable value</p>
+  <pre>
+let u1 = Symbol("uid");
+let u2 = Symbol("uid");
+
+// u1 === u2 --> false
+
+let obj = { uid: 1, name: "test", email: "test@test.com" };
+let u3 = Symbol("uid");
+obj[u3] = "001";
+    </pre>
+
+  <h3>BigInt</h3>
+  <pre>
+// Number.MAX_SAFE_INTEGER
+
+let number = 9007199254740991;
+number = number + 6;
+
+let num2 = 9007199254740991n;
+num2 + 3n;
+    </pre>
+
+  <hr>
+
+  <h2>2. Non-Primitive Data Types (Reference Data Types)</h2>
+  <p><strong>Copy by Reference (Reference of the parent is copied)</strong></p>
+
+  <pre>
+let temp_a = [1, 2, 3];
+let temp_b = temp_a;
+temp_b.pop(); // remove value
+    </pre>
+
+  <h3>Non-Primitive Data Types List:</h3>
+  <ul>
+    <li>Array []</li>
+    <li>Object {}</li>
+    <li>Function ()</li>
+  </ul>
+
+  <h3>Array</h3>
+  <pre>
+         let temp_array = ["name", "age", "phone_number"];
+    </pre>
+
+  <h3>Object</h3>
+  <pre>
+let obj = {
+             name: "test",
+             age: 9,
+             phone_number: 558998554
+          };
+    </pre>
+
+  <h3>Function</h3>
+  <pre>
+        function name(parent) {}
+    </pre>
+
+  <h2>Dynamic Typing</h2>
+  <p>JavaScript is a dynamically typed language, so the variable type can change at runtime.</p>
+
+
+  <pre><code>
+let temp_d = "name";   // string
+temp_d = 123;         // number
+temp_d = {};          // object
+</code></pre>
+
+  <p>
+    Aa reason thi JavaScript flexible chhe, pan large projects mate
+    <b>TypeScript</b> use karvama aave chhe.
+  </p>
+
+  <pre><code>
+// JavaScript --> TypeScript
+</code></pre>
+
+  <hr>
+
+  <h2>typeof Operator</h2>
+
+  <p>
+    Variable no type check karva mate <b>typeof</b> operator use thay chhe.
+  </p>
+
+  <pre><code>
+typeof 12;        // "number"
+typeof "hello";   // "string"
+typeof true;      // "boolean"
+</code></pre>
+
+  <h3>typeof Quirks (Confusing Cases)</h3>
+
+  <pre><code>
+typeof NaN;       // "number"
+typeof null;      // "object"  (JavaScript bug)
+</code></pre>
+
+  <h4>Why typeof NaN is "number"?</h4>
+
+  <p>
+    <b>NaN</b> no matlab chhe <i>Not a Number</i>,
+    pan te ek <b>failed number operation</b> chhe,
+    etle JavaScript eni type "number" j rakhe chhe.
+  </p>
+
+  <pre><code>
+"hello" - 5;   // NaN
+</code></pre>
+
+  <hr>
+
+  <h2>Type Coerction in JavaScript</h2>
+
+  <p>
+    JavaScript automatic type conversion kare chhe,
+    jene <b>Type Coerction</b> kahe chhe.
+  </p>
+
+  <h3>Examples</h3>
+
+  <pre><code>
+"5" + 1;   // "51"  (string concatenation)
+"5" - 1;   // 4     (string converted to number)
+</code></pre>
+
+  <hr>
+
+  <h2>Comparison Operators</h2>
+
+  <h3>Loose Equality (==)</h3>
+
+  <p>
+    Type convert kari ne comparison kare chhe.
+  </p>
+
+  <pre><code>
+1 == "1";   // true
+</code></pre>
+
+  <h3>Strict Equality (===)</h3>
+
+  <p>
+    Value ane type banne same hoy to j true return kare chhe.
+  </p>
+
+  <pre><code>
+1 === "1";  // false
+</code></pre>
+
+  <hr>
+
+  <p><b>Conclusion:</b></p>
+
+  <ul>
+    <li>JavaScript dynamically typed chhe</li>
+    <li><code>typeof</code> ma thoda quirks chhe</li>
+    <li>Type coercion samajhvu important chhe</li>
+    <li><code>===</code> always preferred over <code>==</code></li>
+  </ul>
+
+  <h1>JavaScript Operators</h1>
+
+  <p>This README covers basic JavaScript operators with examples.</p>
+
+  <hr>
+
+  <h2>Comparison Operators</h2>
+
+  <ul>
+    <li><strong>==</strong> : Equal to (value only, type is ignored)</li>
+    <li><strong>===</strong> : Strict equal (value + type)</li>
+    <li><strong>!=</strong> : Not equal (value only)</li>
+    <li><strong>!==</strong> : Strict not equal (value or type)</li>
+    <li><strong>&gt;</strong> : Greater than</li>
+    <li><strong>&lt;</strong> : Less than</li>
+    <li><strong>&gt;=</strong> : Greater than or equal to</li>
+    <li><strong>&lt;=</strong> : Less than or equal to</li>
+  </ul>
+
+  <pre><code>
+5 == "5"        // true
+5 == 6          // false
+
+5 === "5"       // false
+5 === 5         // true
+
+5 != "5"        // false
+5 != 6          // true
+
+5 !== "5"       // true
+5 !== 5         // false
+
+10 > 5          // true
+5 > 10          // false
+
+5 < 10          // true
+10 < 5          // false
+
+10 >= 10        // true
+8 >= 10         // false
+
+10 <= 10        // true
+12 <= 10        // false
+</code></pre>
+
+  <hr>
+
+  <h2>Assignment Operators</h2>
+
+  <ul>
+    <li><strong>=</strong> : Value assignment operator</li>
+    <li><strong>+=</strong> : Add value to existing value</li>
+    <li><strong>-=</strong> : Subtract value from existing value</li>
+    <li><strong>*=</strong> : Multiply and assign</li>
+    <li><strong>/=</strong> : Divide and assign</li>
+    <li><strong>%=</strong> : Gives remainder</li>
+  </ul>
+
+  <pre><code>
+let a = 12;
+a += 3;
+
+a -= 4;
+a *= 2;
+a /= 2;
+a %= 2;
+</code></pre>
+
+  <hr>
+
+  <h2>Logical Operators</h2>
+
+  <ul>
+    <li><strong>&&</strong> : AND</li>
+    <li><strong>||</strong> : OR</li>
+    <li><strong>!</strong> : NOT</li>
+  </ul>
+
+  <pre><code>
+true && true     // true
+false && true   // false
+
+true || true    // true
+false || true   // true
+false || false  // false
+
+!true           // false
+!false          // true
+
+!!12            // true
+</code></pre>
+
+  <hr>
+
+  <h2>Unary Operators</h2>
+
+  <ul>
+    <li><strong>+</strong> : Convert string to number</li>
+    <li><strong>-</strong> : Negative value</li>
+    <li><strong>!</strong> : Logical NOT</li>
+    <li><strong>typeof</strong> : Check data type</li>
+    <li><strong>++</strong> : Increment</li>
+    <li><strong>--</strong> : Decrement</li>
+  </ul>
+
+  <pre><code>
++"5"        // 5
++"Name"     // NaN
+
+-5
+
+!12         // false
+
+typeof "name"   // string
+
+let a = 12;
+a++;        // post increment
+++a;        // pre increment
+
+let b = 3;
+b--;
+b++;
+</code></pre>
+
+  <hr>
+
+  0
+  <hr>
+
+  <h2>Ternary Operator</h2>
+
+  <p>
+    Ternary operator is a short form of <strong>if-else</strong>.
+    It works on a condition and returns one of two values.
+  </p>
+
+  <ul>
+    <li><strong>Syntax :</strong> condition ? trueExpression : falseExpression</li>
+  </ul>
+
+  <pre><code>
+12 > 13 ? console.log("true") : console.log("false");
+</code></pre>
+
+  <p>
+    If the condition is <strong>true</strong>, first statement will execute.<br>
+    If the condition is <strong>false</strong>, second statement will execute.
+  </p>
+
+  <hr>
+
+  <h2>Type Checking in JavaScript</h2>
+
+  <h3>typeof Operator</h3>
+
+  <ul>
+    <li><strong>typeof null</strong> returns <code>object</code> (JavaScript bug)</li>
+    <li><strong>typeof []</strong> returns <code>object</code></li>
+    <li><strong>typeof NaN</strong> returns <code>number</code></li>
+    <li><strong>typeof</strong> is mainly used for <strong>primitive data types</strong></li>
+  </ul>
+
+  <pre><code>
+typeof null       // "object"
+typeof []         // "object"
+typeof NaN        // "number"
+typeof "Hello"    // "string"
+</code></pre>
+
+  <hr>
+
+  <h3>instanceof Operator</h3>
+
+  <p>
+    <strong>instanceof</strong> is used to check the type of <strong>reference data types</strong>.
+  </p>
+
+  <ul>
+    <li>Checks whether an object belongs to a constructor</li>
+    <li>Mainly used for arrays, objects, classes</li>
+  </ul>
+
+  <pre><code>
+let a = [];
+
+a instanceof Array   // true
+a instanceof Object  // true
+</code></pre>
+
+  <p>
+    <strong>Note:</strong><br>
+    Use <code>typeof</code> for <strong>primitive data types</strong><br>
+    Use <code>instanceof</code> for <strong>reference data types</strong>
+  </p>
+
+  <div>
+    <h3>Example 1</h3>
+    <p>let x = 10;</p>
+    <p>let y = 20;</p>
+    <p>if(x>5 && y > 5){
+      console.log("Both are greater than 5");
+      }else{
+      console.log("One or both are not greater than 5");
+      }</p>
+    <p>Answer: Both are greater than 5</p>
+    <p>Why: x and y both are greater than 5 and && operator needs both conditions true.</p>
+  </div>
+
+  <div>
+    <h3>Example 2</h3>
+    <p>let isAdmin = true;</p>
+    <p>let isLoggedIn = false;</p>
+    <p>if(isAdmin || isLoggedIn){
+      console.log("Acess granted");
+      }else{
+      console.log("Acess Denied");
+      }</p>
+    <p>Answer: Access granted</p>
+    <p>Why: OR (||) operator executes if any one condition is true.</p>
+  </div>
+
+  <div>
+    <h3>Example 3</h3>
+    <p>let temp = 35;</p>
+    <p>if(!(temp > 30)){
+      console.log("Hot day");
+      }else{
+      console.log("Pleasant day");
+      }</p>
+    <p>Answer: Pleasant day</p>
+    <p>Why: temp > 30 is true, NOT operator makes it false so else runs.</p>
+  </div>
+
+  <div>
+    <h3>Example 4</h3>
+    <p>let a = 0;</p>
+    <p>if(a){
+      console.log("Truthy value");
+      }else{
+      console.log("Falsy value");
+      }</p>
+    <p>Answer: Falsy value</p>
+    <p>Why: 0 is a falsy value in JavaScript.</p>
+  </div>
+
+  <div>
+    <h3>Example 5</h3>
+    <p>let score = 78;</p>
+    <p>let grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : "D";</p>
+    <p>console.log("Grade:", grade);</p>
+    <p>Answer: Grade C</p>
+    <p>Why: Score is greater than or equal to 70.</p>
+  </div>
+
+  <div>
+    <h3>Example 6</h3>
+    <p>let points = 120;</p>
+    <p>let status = points >= 100 ? "Gold" : points >= 50 ? "Silver" : "Bronze";</p>
+    <p>console.log("Status:", status);</p>
+    <p>Answer: Status Gold</p>
+    <p>Why: Points are greater than or equal to 100.</p>
+  </div>
+
+  <div>
+    <h3>Example 7</h3>
+    <p>let loggedIn = true;</p>
+    <p>let hasToken = false;</p>
+    <p>let access = loggedIn && hasToken ? "Allow" : "Deny";</p>
+    <p>console.log("access:", access);</p>
+    <p>Answer: Deny</p>
+    <p>Why: AND (&&) operator requires both conditions true.</p>
+  </div>
+
+  <div>
+    <h3>Example 8</h3>
+    <p>let a = 5;</p>
+    <p>a++</p>
+    <p>console.log(a);</p>
+    <p>Answer: 6</p>
+    <p>Why: Post-increment increases value by 1.</p>
+  </div>
+
+  <div>
+    <h3>Example 9</h3>
+    
+    <p>let a = 8;</p>
+    <p>++a</p>
+    <p>console.log(a);</p>
+    <p>Answer: 9</p>
+    <p>Why: Pre-increment increases value before execution.</p>
+  </div>
+
+  <div>
+    <h3>Example 10</h3>
+    <p>let b = 4;</p>
+    <p>let c = b++</p>
+    <p>console.log(b, c);</p>
+    <p>Answer: b = 5 , c = 4</p>
+    <p>Why: Post-increment assigns old value first.</p>
+  </div>
+
+  <div>
+    <h3>Example 11</h3>
+    <p>let b = 4;</p>
+    <p>let c = ++b</p>
+    <p>console.log(b, c);</p>
+    <p>Answer: b = 5 , c = 5</p>
+    <p>Why: Pre-increment happens before assignment.</p>
+  </div>
+
+  <div>
+    <h3>Example 12</h3>
+    <p>let m = 10;</p>
+    <p>console.log(m--)</p>
+    <p>console.log(m);</p>
+    <p>Answer: 10 then 9</p>
+    <p>Why: Post-decrement prints value first then decreases.</p>
+  </div>
+
+  <div>
+    <h3>Example 13</h3>
+    <p>let n = 5;</p>
+    <p>let result = n++ + ++n;</p>
+    <p>console.log(result);</p>
+    <p>Answer: 12</p>
+    <p>Why: 5 + 7 = 12.</p>
+  </div>
+
+  <div>
+    <h3>Example 14</h3>
+    <p>let likes = 100;</p>
+    <p>function likePost(){
+      result ++likes;
+      }</p>
+    <p>console.log(likePost());</p>
+    <p>console.log(likes);</p>
+    <p>Answer: Error</p>
+    <p>Why: Invalid syntax and undefined variable.</p>
+  </div>
+
+  <div>
+    <h3>Example 15</h3>
+    <p>let count = 5;</p>
+    <p>if(count-- === 5){
+      console.log("Matched");
+      }else{
+      console.log("Not Matched");
+      }</p>
+    <p></p>
+    <p>Answer: Matched</p>
+    <p>Why: Comparison happens before decrement.</p>
+  </div>
+
+
+
+
+
+  
+              # JavaScript Control Flow Statements 🚦
+
+<p>
+This README explains <b>Control Flow Statements in JavaScript</b> using examples like
+<b>if, if-else, else-if, switch case, early return</b> and a small game example.
+</p>
+
+<hr>
+
+<h2>1. If Statement</h2>
+
+<p>
+The <b>if</b> statement runs the code only when the condition is <b>true</b>.
+In JavaScript, numbers other than <b>0</b> are considered <b>truthy</b>.
+</p>
+
+<pre>
+if (1213) {
+    console.log(true);
+}
+</pre>
+
+<p>
+This will run because <b>1213</b> is a truthy value.
+</p>
+
+<pre>
+if (15 < 13) {
+    console.log(true);
+}
+</pre>
+
+<p>
+This will NOT run because the condition is <b>false</b>.
+</p>
+
+<hr>
+
+<h2>2. If-Else Statement</h2>
+
+<p>
+The <b>if-else</b> statement runs one block when the condition is true
+and another block when it is false.
+</p>
+
+<pre>
+if (12 < 13) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+</pre>
+
+<hr>
+
+<h2>3. Logical NOT (!) Operator</h2>
+
+<p>
+The <b>!</b> operator converts a value into boolean and reverses it.
+</p>
+
+<pre>
+if (!12) {
+    console.log("number");
+} else {
+    console.log("Not A Number");
+}
+</pre>
+
+<p>
+12 is truthy, so <b>!12</b> becomes false.
+</p>
+
+<hr>
+
+<h2>4. If - Else If - Else</h2>
+
+<p>
+Used when multiple conditions need to be checked.
+</p>
+
+<pre>
+let loggedin = true;
+let admin = true;
+
+if (loggedin && admin) {
+    console.log("welcome admin");
+} else if (loggedin) {
+    console.log("welcome user");
+} else {
+    console.log("go to login page");
+}
+</pre>
+
+<hr>
+
+<h2>5. Switch Case Statement</h2>
+
+<p>
+<b>switch</b> is used when we want to compare one value with multiple cases.
+</p>
+
+<pre>
+switch ('tuesday') {
+    case 'Monday':
+        console.log("First day");
+        break;
+    case 'tuesday':
+        console.log("second day");
+        break;
+    default:
+        console.log("normal day");
+}
+</pre>
+
+<p>
+<b>Note:</b> Switch case is <b>case-sensitive</b>.
+</p>
+
+<hr>
+
+<h2>6. Early Return Pattern</h2>
+
+<p>
+Early return makes the function clean and readable by returning
+the result as soon as the condition matches.
+</p>
+
+<pre>
+function score2(value) {
+    if (value < 60) return "Value is less than 60";
+    else if (value < 70) return "Value is less than 70";
+    else if (value < 80) return "Value is less than 80";
+    else if (value < 90) return "Value is less than 90";
+    else return "Value is more than 90";
+}
+</pre>
+
+<hr>
+
+<h2>7. Rock Paper Scissors Game</h2>
+
+<p>
+This function checks user and computer choices and returns the winner.
+</p>
+
+<pre>
+function rps2(user, computer) {
+    if (user === computer) return "It's a tie!";
+    if (user === "rock" && computer === "scissor") return "user wins";
+    if (user === "scissor" && computer === "paper") return "user wins";
+    if (user === "paper" && computer === "rock") return "user wins";
+    return "computer wins";
+}
+</pre>
+
+<hr>
+
+
+
+</body>
+
+</html>
