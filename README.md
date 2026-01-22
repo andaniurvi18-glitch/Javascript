@@ -928,6 +928,143 @@ function rps2(user, computer) {
 </pre>
 
 <hr>
+==================================================================================================================================
+
+<h1>JavaScript Loops – Notes</h1>
+
+<p>
+Aa README file ma JavaScript na <b>loops</b> samjhavya chhe.
+Loops no use repeating code blocks mate thay chhe.
+</p>
+
+<hr>
+
+<h2>Why use Loops?</h2>
+<p>
+Jyaare ek j code ne vaar-vaar chalavvo hoy, tyaare loops no use thay chhe.
+Example: 1 thi 10 sudhi numbers print karva.
+</p>
+
+<hr>
+
+<h2>For Loop</h2>
+<p>
+<b>For loop</b> tyaare use thay chhe jyaare tame pehla thi j jano cho
+ke loop ketli vaar chalavvo chhe.
+</p>
+
+<p><b>Structure:</b></p>
+<p>
+Start → End → Change
+</p>
+
+<p><b>Example 1: 1 thi 10 sudhi print</b></p>
+<pre>
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+</pre>
+
+<p><b>Example 2: 20 thi 10 sudhi reverse</b></p>
+<pre>
+for (let i = 20; i >= 10; i--) {
+  console.log(i);
+}
+</pre>
+
+<hr>
+
+<h2>While Loop</h2>
+<p>
+<b>While loop</b> tyaare use thay chhe jyaare repeat karvanu che
+pan ketli vaar chalavvu chhe e clear na hoy.
+</p>
+
+<p><b>Structure:</b></p>
+<p>
+Start → Condition → Code → Change
+</p>
+
+<p><b>Example 1: 10 thi 20</b></p>
+<pre>
+let k = 10;
+while (k <= 20) {
+  console.log(k);
+  k++;
+}
+</pre>
+
+<p><b>Example 2: Reverse loop</b></p>
+<pre>
+let ao = 6;
+while (ao > 1) {
+  console.log(ao);
+  ao--;
+}
+</pre>
+
+<p><b>Example 3: Hello 20 times</b></p>
+<pre>
+let d = "Hello";
+let i = 0;
+while (i < 20) {
+  console.log(d);
+  i++;
+}
+</pre>
+
+<p><b>Example 4: 20 thi 25</b></p>
+<pre>
+let d = 20;
+while (d >= 20 && d <= 25) {
+  console.log(d);
+  d++;
+}
+</pre>
+
+<p><b>Example 5: 50 thi 60</b></p>
+<pre>
+let q = 50;
+while (q <= 60) {
+  console.log(q);
+  q++;
+}
+</pre>
+
+<hr>
+
+<h2>Do While Loop</h2>
+<p>
+<b>Do while loop</b> ek vaar to condition check karya vagar
+code execute kare j chhe.
+</p>
+
+<p><b>Structure:</b></p>
+<p>
+Start → Code → Change → Condition
+</p>
+
+<p><b>Example 1: 10 thi 20</b></p>
+<pre>
+let g = 10;
+do {
+  console.log("do while:", g);
+  g++;
+} while (g <= 20);
+</pre>
+
+<p><b>Example 2: 10 thi 1</b></p>
+<pre>
+let h = 10;
+do {
+  console.log("do while:", h);
+  h--;
+} while (h >= 1);
+</pre>
+
+<hr>
+
+
 
 
 
