@@ -289,3 +289,107 @@ a = function(){console.log("Hello");}
 a();
 
 
+//Ex:13
+//Pass a function into another function and execute it.
+
+function abcd(val) {
+  val();
+}
+
+abcd(function () {
+  console.log("Hello");
+});
+
+//Ex:15
+//Identify the higher-order function.
+
+[1, 2, 3].map(function (x) {
+  return x * 2;
+});
+  
+//Ex:16
+//Pure or impure function?
+
+let total = 5;
+
+function num(num) {
+  total += num;
+}
+
+num(3);
+
+//Ex:17
+//Convert example 16 into a pure function.
+
+function num(total, num) {
+  return total + num;
+}
+
+num(5, 3);
+
+//Ex:18
+//What is Closure? When is it created?
+
+function outer() {
+  let x = 10;
+  return function () {
+    console.log(x);
+  };
+}
+
+//Ex:19
+//What's logged?
+
+function outer() {
+  let count = 0;
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();
+counter();
+counter();
+
+//Ex:20
+//Convert into an IIFE.
+
+(function () {
+  console.log("Initialized");
+})();
+  
+//ex:21
+//Use of IIFE with real-world example.
+
+let func = (function () {
+  let score = 0;
+
+  return {
+    getScore: function () {
+      console.log(score);
+    },
+    setScore: function (val) {
+      score = val;
+    }
+  };
+})();
+  
+//Ex:22
+//What will be the output?
+
+temp_var();
+
+var temp_var = function () {
+  console.log("Hello");
+};
+
+//Ex:23
+//What will be the output?
+
+temp_var();
+
+function temp_var() {
+  console.log("Hello");
+}
+  
