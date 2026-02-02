@@ -1064,7 +1064,352 @@ do {
 
 <hr>
 
+=========================================================================================
+
+# JavaScript Loop Examples (Break & Continue)
+
+<div>
+  <h3>Example 1:</h3>
+  <p>Print number from 1 to 10 using a for loop.</p>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> for loop 1 thi 10 sudhi sacho chale chhe, koi error nathi.</p>
+</div>
+
+<div>
+  <h3>Example 2:</h3>
+  <p>Print number from 10 to 1 using while loop.</p>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> while loop condition sachi hoy to number reverse ma print thashe.</p>
+</div>
+
+<div>
+  <h3>Example 3:</h3>
+  <p>Print even numbers from 1 to 20 using for loop.</p>
+  <pre>
+for(let i = 1; i <= 20; i++){
+  if(i % 2 === 0){
+    console.log(i);
+  }
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> i % 2 === 0 thi even numbers sacha check thay chhe.</p>
+</div>
+
+<div>
+  <h3>Example 4:</h3>
+  <p>Print odd numbers from 1 to 15 using while loop.</p>
+  <pre>
+let i = 1;
+while(i <= 15){
+  if(i % 2 !== 0){
+    console.log(i);
+  }
+  i++;
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> i % 2 !== 0 odd number check kare chhe, loop sacho chhe.</p>
+</div>
+
+<div>
+  <h3>Example 5:</h3>
+  <p>Print the multiplication table of 5.</p>
+  <pre>
+for(let i = 1; i <= 10; i++){
+  console.log(`5 x ${i} = ${5 * i}`);
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> for loop 1 thi 10 sudhi chale chhe ane 5*i sacho calculation kare chhe.</p>
+</div>
+
+<div>
+  <h3>Example 6:</h3>
+  <p>Find the sum of numbers from 1 to 100 using a loop.</p>
+  <pre>
+let sum = 0;
+for(let i = 1; i <= 100; i++){
+  sum = sum + i;
+}
+console.log(sum);
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> sum variable loop ni andar properly update thay chhe.</p>
+</div>
+
+<div>
+  <h3>Example 7:</h3>
+  <p>Print all numbers between 1 to 50 that are divisible by 3.</p>
+  <pre>
+for(let i = 1; i <= 50; i++){
+  if(i % 3 === 0){
+    console.log(i);
+  }
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> i % 3 === 0 condition thi divisible by 3 numbers print thay chhe.</p>
+</div>
+
+<div>
+  <h3>Example 8:</h3>
+  <p>Ask the user for a number and print whether each number from 1 to that number is even or odd.</p>
+  <pre>
+let num = prompt("give a number");
+for(let i = 1; i <= num; i++){
+  if(i % 2 === 0){
+    console.log(i, "is even");
+  } else {
+    console.log(i, "is odd");
+  }
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> for loop ma spelling mistake hati (numl), correct variable num chhe.</p>
+</div>
+
+<div>
+  <h3>Example 9:</h3>
+  <p>Count how many numbers between 1 to 100 are divisible by 3 or 5.</p>
+  <pre>
+let count = 0;
+for(let i = 1; i <= 100; i++){
+  if(i % 3 === 0 || i % 5 === 0){
+    count++;
+  }
+}
+console.log(count);
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> aa code count kare chhe, sirf print nathi karto.</p>
+</div>
+
+<div>
+  <h3>Example 10 (Break):</h3>
+  <p>Stop at first multiple of 7.</p>
+  <pre>
+for(let i = 1; i <= 100; i++){
+  console.log(i);
+  if(i % 7 === 0){
+    break;
+  }
+}
+  </pre>
+    <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> break statement pehli vaar 7 no multiple male tyare loop stop kare chhe.</p>
+</div>
+
+<div>
+  <h3>Example 11 (Continue):</h3>
+  <p>Skip multiples of 3 and print all other numbers.</p>
+  <pre>
+for(let i = 1; i <= 20; i++){
+  if(i % 3 === 0){
+    continue;
+  }
+  console.log(i);
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> continue multiples of 3 skip kare chhe ane baki numbers print thay chhe.</p>
+</div>
+
+<div>
+  <h3>Example 12 (Break + Continue):</h3>
+  <p>Print first 5 odd numbers and stop the loop.</p>
+  <pre>
+let count = 0;
+for(let i = 1; i <= 100; i++){
+  if(i % 2 === 0){
+    continue;
+  }
+  console.log(i);
+  count++;
+  if(count === 5){
+    break;
+  }
+}
+  </pre>
+  <p><b>Answer:</b> Output aavshe</p>
+  <p><b>Why:</b> 5 odd numbers complete thata j loop break thai jay chhe.</p>
+</div>
+======================================================================================================
 
 
+# JavaScript Functions – Complete Guide
 
+<div>
+  <h4>What is a Function?</h4>
+  <p><b>What:</b> Function is a block of code that performs a specific task.</p>
+  <p><b>Why:</b> To avoid code repetition and make code modular & reusable.</p>
+  <p><b>How:</b> function keyword, name, parameters, body, return statement.</p>
+</div>
+
+<div>
+  <h4>Types of Functions</h4>
+
+  <p><b>Function Declaration</b></p>
+  <pre>
+function abc(){}
+  </pre>
+
+  <p><b>Function Expression</b></p>
+  <pre>
+let fnc = function(){}
+  </pre>
+
+  <p><b>Arrow Function (Fat Arrow)</b></p>
+  <pre>
+let fnc1 = () => {}
+  </pre>
+</div>
+
+<div>
+  <h4>Basic Function Example</h4>
+  <pre>
+function temp_cart(){
+  console.log("adding product");
+}
+
+temp_cart("laptop");
+temp_cart("watch");
+temp_cart("mobile");
+  </pre>
+</div>
+
+<div>
+  <h4>Parameters vs Arguments</h4>
+  <p><b>Parameters:</b> Function definition ma () andar lakheli values.</p>
+  <p><b>Arguments:</b> Function call karta vakhte pass kareli values.</p>
+
+  <pre>
+function cart(product){ // parameter
+  console.log(`Adding ${product}`);
+}
+
+cart("Laptop"); // argument
+cart("Mac Book");
+cart("525 ultra");
+  </pre>
+</div>
+
+<div>
+  <h4>Multiple Parameters</h4>
+  <pre>
+function cart2(name, rollno){
+  console.log(`Adding ${name} at ${rollno}`);
+}
+
+cart2("axita",101);
+cart2("riddhi",102);
+cart2("mansi",103);
+  </pre>
+</div>
+
+<div>
+  <h4>Arrow Function Conversion</h4>
+  <pre>
+let cart3 = (name, rollno) => {
+  console.log(`arrow function ${name} at ${rollno}`);
+};
+cart3("tisha", 104);
+
+let cart4 = (name, rollno) => {
+  console.log(`function Expression ${name} at ${rollno}`);
+};
+cart3("lxita", 105);
+  </pre>
+</div>
+
+<div>
+  <h4>Default Parameters</h4>
+  <pre>
+function abcd(b = 10, price = 0){
+  console.log(price, b)
+}
+abcd(15);
+  </pre>
+  <p><b>Use Case:</b> Fees, platform charges, optional values.</p>
+</div>
+
+<div>
+  <h4>Rest Parameters</h4>
+  <pre>
+function def1(...number){
+  console.log(number);
+}
+def1(1,2,3,4,5,6,7,8,9,10);
+  </pre>
+</div>
+
+<div>
+  <h4>Early Return</h4>
+  <pre>
+function score1(value) {
+  if (value > 90) return "Value is more than 90";
+  else if (value < 80) return "Value is less than 80";
+  else if (value < 70) return "Value is less than 70";
+  else if (value < 60) return "Value is less than 60";
+  else return "value is less than 60";
+}
+let result = score1(80);
+console.log(result);
+  </pre>
+</div>
+
+<div>
+  <h4>First Class Functions</h4>
+
+  <p><b>1. Function stored in variable</b></p>
+  <pre>
+const cart5 = function(name, rollno){
+  console.log(`Adding ${name} at ${rollno}`);
+};
+cart5("function expression - S25 ultra", 69000);
+  </pre>
+
+  <p><b>2. Function passed as argument</b></p>
+  <pre>
+function temp_b(fnc) {
+  fnc();
+}
+temp_b(function fnc2() {
+  console.log("First Class Function");
+});
+  </pre>
+
+  <p><b>3. Function returned from another function</b></p>
+  <pre>
+function abcd() {
+  return function () {
+    console.log("function return other function");
+  };
+}
+abcd()(); // call a function that returns another function
+  </pre>
+</div>
+
+<div>
+  <h4>Higher Order Functions (HOF)</h4>
+  <p>Function that takes another function as argument or returns a function as result.</p>
+
+  <pre>
+// HOF example: passing function as argument
+function hello(andani){
+  andani();
+}
+hello(function a(){
+  console.log("hello i am Akshita");
+});
+
+// HOF example: returning a function
+function abcd(){
+  return function(){
+    console.log("Higher order function Example");
+  };
+}
+abcd()();
+  </pre>
+</div>
 
