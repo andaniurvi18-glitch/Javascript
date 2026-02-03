@@ -1104,7 +1104,7 @@ for (let a = 2; a <= 20; a++) {
 
 
 <div>
-  <h3>Example 1</h3>
+  <h1>Example 1</h1>
   <p>Print number from 1 to 10 using a for loop.</p>
   <pre><code>
 for (let i = 1; i <= 10; i++) {
@@ -1115,7 +1115,7 @@ for (let i = 1; i <= 10; i++) {
   <p><b>Why:</b> The loop runs 10 times starting from 1.</p>
 </div>
 <div>
-  <h3>Example 2</h3>
+  <h1>Example 2</h1>
   <p>Print number from 10 to 1 using while loop.</p>
   <pre><code>
 let q = 10;
@@ -1128,7 +1128,7 @@ while (q >= 1) {
   <p><b>Why:</b> q decreases by 1 on each iteration.</p>
 </div>
 <div>
-  <h3>Example 3</h3>
+  <h1>Example 3</h1>
   <p>Print even numbers from 1 to 20.</p>
   <pre><code>
 for (let i = 1; i <= 20; i++) {
@@ -1141,7 +1141,7 @@ for (let i = 1; i <= 20; i++) {
   <p><b>Why:</b> Even numbers are divisible by 2.</p>
 </div>
 <div>
-  <h3>Example 4</h3>
+  <h1>Example 4</h1>
   <p>Print odd numbers from 1 to 15.</p>
   <pre><code>
 let i = 1;
@@ -1156,7 +1156,7 @@ while (i <= 15) {
   <p><b>Why:</b> Odd numbers are not divisible by 2.</p>
 </div>
 <div>
-  <h3>Example 5</h3>
+  <h1>Example 5</h1>
   <p>Print multiplication table of 5.</p>
   <pre><code>
 for (let i = 1; i <= 10; i++) {
@@ -1167,7 +1167,7 @@ for (let i = 1; i <= 10; i++) {
   <p><b>Why:</b> Loop multiplies 5 with numbers 1 to 10.</p>
 </div>
 <div>
-  <h3>Example 6</h3>
+  <h1>Example 6</h1>
   <p>Find the sum of numbers from 1 to 100.</p>
   <pre><code>
 let sum = 0;
@@ -1182,7 +1182,7 @@ console.log(sum);
   <p><b>Why:</b> All numbers from 1 to 100 are added.</p>
 </div>
 <div>
-  <h3>Example 7</h3>
+  <h1>Example 7</h1>
   <p>Print numbers between 1 to 50 divisible by 3.</p>
   <pre><code>
 for (let i = 1; i <= 50; i++) {
@@ -1195,7 +1195,7 @@ for (let i = 1; i <= 50; i++) {
   <p><b>Why:</b> Condition checks divisibility by 3.</p>
 </div>
 <div>
-  <h3>Example 8</h3>
+  <h1>Example 8</h1>
   <p>Check whether numbers are even or odd up to user input.</p>
   <pre><code>
 let num = prompt("Enter a number");
@@ -1212,7 +1212,7 @@ for (let i = 1; i <= num; i++) {
   <p><b>Why:</b> Modulus operator checks remainder.</p>
 </div>
 <div>
-  <h3>Example 9</h3>
+  <h1>Example 9</h1>
   <p>Count numbers divisible by 3 or 5 between 1 to 100.</p>
   <pre><code>
 let count = 0;
@@ -1229,7 +1229,7 @@ console.log(count);
   <p><b>Why:</b> Logical OR checks both conditions.</p>
 </div>
 <div>
-  <h3>Example 10 (Break)</h3>
+  <h1>Example 10 (Break)</h1>
   <p>Stop loop at first multiple of 7.</p>
   <pre><code>
 for (let i = 1; i <= 100; i++) {
@@ -1243,7 +1243,7 @@ for (let i = 1; i <= 100; i++) {
   <p><b>Why:</b> break keyword terminates the loop.</p>
 </div>
 <div>
-  <h3>Example 11 (Continue)</h3>
+  <h1>Example 11 (Continue)</h1>
   <p>Skip multiples of 3.</p>
   <pre><code>
 for (let i = 1; i <= 20; i++) {
@@ -1257,7 +1257,7 @@ for (let i = 1; i <= 20; i++) {
   <p><b>Why:</b> continue skips current iteration.</p>
 </div>
 <div>
-  <h3>Example 12</h3>
+  <h1>Example 12</h1>
   <p>Print first 5 odd numbers only.</p>
   <pre><code>
 let count = 0;
@@ -1758,7 +1758,7 @@ Function expression ane arrow function hoisted nathi hota, etle call karta error
 ## Function Examples
 <hr>
 <div>
-  <h3> Example 1: </h3>
+  <h1> Example 1: </h1>
   <p>What's the difference between function declaration and function expression in terms of hoisting?</p>
   <p>
     <b>Answer:</b> Function declaration ma function declare pehla pan call thai sake,
@@ -1767,7 +1767,7 @@ Function expression ane arrow function hoisted nathi hota, etle call karta error
 </div>
 
 <div>
-  <h3> Example 2: </h3>
+  <h1> Example 2: </h1>
   <pre><code>
 greet();
 
@@ -1780,7 +1780,7 @@ function greet() {
 </div>
 
 <div>
-  <h3> Example 3: </h3>
+  <h1> Example 3: </h1>
   <p>Convert normal function to Arrow Function</p>
   <pre><code>
 function add(a, b) {
@@ -1797,7 +1797,7 @@ add(5, 23);
 </div>
 
 <div>
-  <h3> Example 4: </h3>
+  <h1> Example 4: </h1>
   <p>Identify what is parameters and what is arguments</p>
   <pre><code>
 function welcome(name) {
@@ -1814,7 +1814,7 @@ welcome("user");
 </div>
 
 <div>
-  <h3> Example 5: </h3>
+  <h1> Example 5: </h1>
   <p>How many parameters and arguments?</p>
   <pre><code>
 function temp(a, b, c) {
@@ -1827,7 +1827,7 @@ temp(1, 2);
 </div>
 
 <div>
-  <h3> Example 6: </h3>
+  <h1> Example 6: </h1>
   <p>Predict the output</p>
   <pre><code>
 function temp_user(name = "Guest") {
@@ -1844,7 +1844,7 @@ temp_user();
 </div>
 
 <div>
-  <h3> Example 7: </h3>
+  <h1> Example 7: </h1>
   <p>What is the <code>...</code> operator and why use it in function?</p>
   <pre><code>
 function number(...numbers) {
@@ -1861,7 +1861,7 @@ number(1, 2, 3, 4, 5);
 </div>
 
 <div>
-  <h3> Example 8: </h3>
+  <h1> Example 8: </h1>
   <p>Use rest parameters to accept any number of scores and return the total</p>
   <pre><code>
 function calculateTotal(...scores) {
@@ -1891,7 +1891,7 @@ let sumtotal = calculateTotalCorrect(10, 20, 30, 40, 50);
 </div>
 
 <div>
-  <h3> Example 9: </h3>
+  <h1> Example 9: </h1>
   <p>Fix the function using early return</p>
   <pre><code>
 function checkAge(age) {
@@ -1906,7 +1906,7 @@ function checkAge(age) {
 </div>
 
 <div>
-  <h3> Example 10: </h3>
+  <h1> Example 10: </h1>
   <p>What is the return value of below function?</p>
   <pre><code>
 function f() {
@@ -1919,7 +1919,7 @@ function f() {
 
 
 <div>
-  <h3> Example 11: </h3>
+  <h1> Example 11: </h1>
   <p>What does it mean when we say "functions are first-class citizens"?</p>
   <p><b>Ans:</b> Functions are treated like normal variables.</p>
   <p><b>Why:</b> They can be assigned, passed, and returned.</p>
@@ -1939,7 +1939,7 @@ a();
 </div>
 
 <div>
-  <h3> Example 13: </h3>
+  <h1> Example 13: </h1>
   <p>Pass a function into another function and execute it.</p>
   <pre><code>
 function abcd(val) {
@@ -1955,14 +1955,14 @@ abcd(function () {
 </div>
 
 <div>
-  <h3> Example 14: </h3>
+  <h1> Example 14: </h1>
   <p>What is a higher-order function?</p>
   <p><b>Ans:</b> A function that takes or returns another function.</p>
   <p><b>Why:</b> It works with functions as values.</p>
 </div>
 
 <div>
-  <h3> Example 15: </h3>
+  <h1> Example 15: </h1>
   <p>Identify the higher-order function.</p>
   <pre><code>
 [1, 2, 3].map(function (x) {
@@ -1974,7 +1974,7 @@ abcd(function () {
 </div>
 
 <div>
-  <h3> Example 16: </h3>
+  <h1> Example 16: </h1>
   <p>Pure or impure function?</p>
   <pre><code>
 let total = 5;
@@ -1990,7 +1990,7 @@ num(3);
 </div>
 
 <div>
-  <h3> Example 17: </h3>
+  <h1> Example 17: </h1>
   <p>Convert example 16 into a pure function.</p>
   <pre><code>
 function num(total, num) {
@@ -2004,7 +2004,7 @@ num(5, 3);
 </div>
 
 <div>
-  <h3> Example 18: </h3>
+  <h1> Example 18: </h1>
   <p>What is Closure? When is it created?</p>
   <pre><code>
 function outer() {
@@ -2019,7 +2019,7 @@ function outer() {
 </div>
 
 <div>
-  <h3> Example 19: </h3>
+  <h1> Example 19: </h1>
   <p>What's logged?</p>
   <pre><code>
 function outer() {
@@ -2040,7 +2040,7 @@ counter();
 </div>
 
 <div>
-  <h3> Example 20: </h3>
+  <h1> Example 20: </h1>
   <p>Convert into an IIFE.</p>
   <pre><code>
 (function () {
@@ -2052,10 +2052,10 @@ counter();
 </div>
 
 <div>
-  <h3> Example 21: </h3>
+  <h1> Example 21: </h1>
   <p>Use of IIFE with real-world example.</p>
   <pre><code>
-let fun = (function () {
+let func = (function () {
   let score = 0;
 
   return {
@@ -2073,7 +2073,7 @@ let fun = (function () {
 </div>
 
 <div>
-  <h3> Example 22: </h3>
+  <h1> Example 22: </h1>
   <p>What will be the output?</p>
   <pre><code>
 temp_var();
@@ -2087,7 +2087,7 @@ var temp_var = function () {
 </div>
 
 <div>
-  <h3> Example 23: </h3>
+  <h1> Example 23: </h1>
   <p>What will be the output?</p>
   <pre><code>
 temp_var();
@@ -2099,4 +2099,313 @@ function temp_var() {
   <p><b>Ans:</b> Hello.</p>
   <p><b>Why:</b> Function declarations are hoisted.</p>
 </div>
+
+==========================================================================================================================
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Array Methods</title>
+</head>
+<body>
+
+  <h1>JavaScript Arrays & Array Methods</h1>
+
+  <p>An array is used to hold multiple values at the same time.</p>
+
+  <pre><code>
+// Array -- Hold multiple values at same time
+// [1,2,3,4,5]
+// ["Hello", "a", "B" , "C"]
+// [2,"Bye", "Hello",50]
+
+// create
+// define a variable = [multiple values]
+let arr = [1,2,3,4];
+
+// access
+// position = [0 1 2 3]
+// array_name[position]
+// arr[3], arr[2], arr[10]
+
+// modify
+// array_name[position] = new value
+// arr[0] = 10
+  </code></pre>
+
+  <h2>Array Methods</h2>
+  <p><b>Syntax:</b> <code>variable_name.method_name()</code></p>
+
+  <h3>push()</h3>
+  <p>Adds a new value at the end of the array.</p>
+  <pre><code>
+arr.push(5);
+
+let clothe_product = ["Nike","Reebok","Levi’s","Zara"];
+clothe_product.push("Fabindia");
+  </code></pre>
+
+  <h3>pop()</h3>
+  <p>Removes the last value from the array.</p>
+  <pre><code>
+clothe_product.pop();
+  </code></pre>
+
+  <h3>shift()</h3>
+  <p>Removes the first value from the array.</p>
+  <pre><code>
+clothe_product.shift();
+  </code></pre>
+
+  <h3>unshift()</h3>
+  <p>Adds a value at the beginning of the array.</p>
+  <pre><code>
+clothe_product.unshift("Jack & Jones");
+  </code></pre>
+
+  <h3>splice()</h3>
+  <p>Adds or removes values from a specific position.</p>
+  <pre><code>
+let e = [50, 60, 30, 40, 10];
+e.splice(3, 2);
+  </code></pre>
+
+  <h3>slice()</h3>
+  <p>Copies values from an array into a new array.</p>
+  <pre><code>
+let all_product = ["Nike","Reebok","Levi’s","Zara"];
+let face_product = all_product.slice(0,3);
+  </code></pre>
+
+  <h3>splice vs slice</h3>
+  <ul>
+    <li><b>splice</b> modifies the original array</li>
+    <li><b>slice</b> creates a new array</li>
+  </ul>
+
+  <h3>reverse()</h3>
+  <p>Reverses the array order.</p>
+  <pre><code>
+let g = [25, 30, 35, 40, 85];
+// g.reverse();
+  </code></pre>
+
+  <h3>sort()</h3>
+  <p>Sorts array values.</p>
+
+  <h4>Ascending Order</h4>
+  <pre><code>
+let h = [50,20,80,10,40];
+h.sort();
+
+let b = [11, 62, 3, 4, 25];
+let sr = b.sort(function(a,b){
+  return a - b;
+});
+  </code></pre>
+
+  <h4>Descending Order</h4>
+  <pre><code>
+let i = [11, 62, 3, 4, 25];
+let sr1 = i.sort(function(a,b){
+  return b - a;
+});
+  </code></pre>
+
+=================================================================================
+<div>
+  <h3>Q1. push()</h3>
+  <p><b>Task:</b> Add 'Buy milk'</p>
+  <pre><code>
+tasks.push('Buy milk');
+  </code></pre>
+  <p><b>Answer:</b> ['Wake up', 'Brush teeth', 'Buy milk']</p>
+  <p><b>Why:</b> <code>push()</code> array ના end માં value add કરે છે.</p>
+</div>
+
+<div>
+  <h3>Q2. pop()</h3>
+  <pre><code>
+notifications.pop();
+  </code></pre>
+  <p><b>Answer:</b> ['Email', 'Message']</p>
+  <p><b>Why:</b> <code>pop()</code> last element remove કરે છે.</p>
+</div>
+
+<div>
+  <h3>Q3. shift()</h3>
+  <pre><code>
+customers.shift();
+  </code></pre>
+  <p><b>Answer:</b> ['Customer2', 'Customer3']</p>
+  <p><b>Why:</b> <code>shift()</code> first element remove કરે છે.</p>
+</div>
+
+<div>
+  <h3>Q4. unshift()</h3>
+  <pre><code>
+playlist.unshift('Song A');
+  </code></pre>
+  <p><b>Answer:</b> ['Song A', 'Song B', 'Song C']</p>
+  <p><b>Why:</b> <code>unshift()</code> start માં value add કરે છે.</p>
+</div>
+
+<div>
+  <h3>Q5. splice()</h3>
+  <pre><code>
+students.splice(1, 1, 'John', 'Sara');
+  </code></pre>
+  <p><b>Answer:</b> ['Mike', 'John', 'Sara', 'Emma', 'Sophia']</p>
+  <p><b>Why:</b> <code>splice()</code> remove + add both કરી શકે છે.</p>
+</div>
+
+<div>
+  <h3>Q6. splice()</h3>
+  <pre><code>
+menu.splice(1, 2);
+  </code></pre>
+  <p><b>Answer:</b> ['Burger', 'Salad']</p>
+  <p><b>Why:</b> index 1 થી 2 items remove થયા.</p>
+</div>
+
+<div>
+  <h3>Q7. slice()</h3>
+  <pre><code>
+days.slice(5);
+  </code></pre>
+  <p><b>Answer:</b> ['Saturday', 'Sunday']</p>
+  <p><b>Why:</b> <code>slice()</code> new array બનાવે છે.</p>
+</div>
+
+<div>
+  <h3>Q8. reverse()</h3>
+  <pre><code>
+levels.reverse();
+  </code></pre>
+  <p><b>Answer:</b> ['Hard', 'Medium', 'Easy']</p>
+  <p><b>Why:</b> Array order reverse થાય છે.</p>
+</div>
+
+<div>
+  <h3>Q9. sort()</h3>
+  <pre><code>
+scores.sort((a,b) => a-b);
+  </code></pre>
+  <p><b>Answer:</b> [12, 34, 45, 78, 89]</p>
+  <p><b>Why:</b> Comparator વગર numbers wrong sort થાય.</p>
+</div>
+
+<div>
+  <h3>Q10. sort() numbers</h3>
+  <pre><code>
+prices.sort((a,b) => a-b);
+  </code></pre>
+  <p><b>Answer:</b> [49, 149, 199, 299, 999]</p>
+</div>
+
+<div>
+  <h3>Q11. slice() vs splice()</h3>
+  <pre><code>
+products.slice(0, 3);
+  </code></pre>
+  <p><b>Answer:</b> ['Laptop', 'Phone', 'Tablet']</p>
+  <p><b>Why:</b> Original array change થતો નથી.</p>
+</div>
+
+<div>
+  <h3>Q12. splice() complex</h3>
+  <pre><code>
+colors.splice(2, 1, 'Purple', 'Orange');
+  </code></pre>
+  <p><b>Answer:</b> ['Red','Green','Purple','Orange','Yellow']</p>
+</div>
+
+<div>
+  <h3>Q13. reverse() + push()</h3>
+  <pre><code>
+steps.reverse();
+steps.push('Final Step');
+  </code></pre>
+  <p><b>Answer:</b> ['Step 3','Step 2','Step 1','Final Step']</p>
+</div>
+
+<div>
+  <h3>Q14. sort() ignore case</h3>
+  <pre><code>
+names.sort((a,b)=>a.toLowerCase().localeCompare(b.toLowerCase()));
+  </code></pre>
+  <p><b>Answer:</b> ['alice','Bob','charlie','David']</p>
+</div>
+
+<div>
+  <h3>Q15. Combination</h3>
+  <pre><code>
+movies.push('Inception');
+movies.shift();
+movies.sort();
+  </code></pre>
+  <p><b>Answer:</b> ['Gladiator','Inception','Titanic']</p>
+</div>
+
+<div>
+  <h3>Q16. splice() return value</h3>
+  <p><b>Answer:</b> Removed elements return થાય છે.</p>
+</div>
+
+<div>
+  <h3>Q17. slice() immutability</h3>
+  <p><b>Answer:</b> Original array change થતો નથી.</p>
+</div>
+
+<div>
+  <h3>Q18. sort() unexpected</h3>
+  <p><b>Answer:</b> Default sort strings પ્રમાણે compare કરે છે.</p>
+</div>
+
+<div>
+  <h3>Q19. reverse() mutation</h3>
+  <p><b>Answer:</b> Same array reference modify થાય છે.</p>
+</div>
+
+<div>
+  <h3>Q20. push() vs unshift()</h3>
+  <p><b>Answer:</b> <code>unshift()</code> expensive છે કારણ કે index shift થાય છે.</p>
+</div>
+
+<div>
+  <h3>Q21. splice() deleteCount = 0</h3>
+  <p><b>Answer:</b> No removal, only insertion.</p>
+</div>
+
+<div>
+  <h3>Q22. sort() strings</h3>
+  <p><b>Answer:</b> ['1','10','2']</p>
+</div>
+
+<div>
+  <h3>Q23. slice() negative index</h3>
+  <p><b>Answer:</b> [300, 400]</p>
+</div>
+
+<div>
+  <h3>Q24. splice vs slice</h3>
+  <ul>
+    <li>a) Update original → <code>splice()</code></li>
+    <li>b) Keep unchanged → <code>slice()</code></li>
+  </ul>
+</div>
+
+<div>
+  <h3>Q25. Chained methods</h3>
+  <pre><code>
+arr2.push(arr2.shift());
+  </code></pre>
+  <p><b>Answer:</b> [2, 3, 1]</p>
+  <p><b>Why:</b> First element end માં push થયો.</p>
+</div>
+
+
+</body>
+</html>
+
 
