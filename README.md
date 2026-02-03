@@ -1104,7 +1104,7 @@ for (let a = 2; a <= 20; a++) {
 
 
 <div>
-  <h1>Example 1</h1>
+  <h3>Example 1</h3>
   <p>Print number from 1 to 10 using a for loop.</p>
   <pre><code>
 for (let i = 1; i <= 10; i++) {
@@ -1115,7 +1115,7 @@ for (let i = 1; i <= 10; i++) {
   <p><b>Why:</b> The loop runs 10 times starting from 1.</p>
 </div>
 <div>
-  <h1>Example 2</h1>
+  <h3>Example 2</h3>
   <p>Print number from 10 to 1 using while loop.</p>
   <pre><code>
 let q = 10;
@@ -1128,7 +1128,7 @@ while (q >= 1) {
   <p><b>Why:</b> q decreases by 1 on each iteration.</p>
 </div>
 <div>
-  <h1>Example 3</h1>
+  <h3>Example 3</h3>
   <p>Print even numbers from 1 to 20.</p>
   <pre><code>
 for (let i = 1; i <= 20; i++) {
@@ -1141,7 +1141,7 @@ for (let i = 1; i <= 20; i++) {
   <p><b>Why:</b> Even numbers are divisible by 2.</p>
 </div>
 <div>
-  <h1>Example 4</h1>
+  <h3>Example 4</h3>
   <p>Print odd numbers from 1 to 15.</p>
   <pre><code>
 let i = 1;
@@ -1156,7 +1156,7 @@ while (i <= 15) {
   <p><b>Why:</b> Odd numbers are not divisible by 2.</p>
 </div>
 <div>
-  <h1>Example 5</h1>
+  <h3>Example 5</h3>
   <p>Print multiplication table of 5.</p>
   <pre><code>
 for (let i = 1; i <= 10; i++) {
@@ -1167,7 +1167,7 @@ for (let i = 1; i <= 10; i++) {
   <p><b>Why:</b> Loop multiplies 5 with numbers 1 to 10.</p>
 </div>
 <div>
-  <h1>Example 6</h1>
+  <h3>Example 6</h3>
   <p>Find the sum of numbers from 1 to 100.</p>
   <pre><code>
 let sum = 0;
@@ -1182,7 +1182,7 @@ console.log(sum);
   <p><b>Why:</b> All numbers from 1 to 100 are added.</p>
 </div>
 <div>
-  <h1>Example 7</h1>
+  <h3>Example 7</h3>
   <p>Print numbers between 1 to 50 divisible by 3.</p>
   <pre><code>
 for (let i = 1; i <= 50; i++) {
@@ -1195,7 +1195,7 @@ for (let i = 1; i <= 50; i++) {
   <p><b>Why:</b> Condition checks divisibility by 3.</p>
 </div>
 <div>
-  <h1>Example 8</h1>
+  <h3>Example 8</h3>
   <p>Check whether numbers are even or odd up to user input.</p>
   <pre><code>
 let num = prompt("Enter a number");
@@ -1212,7 +1212,7 @@ for (let i = 1; i <= num; i++) {
   <p><b>Why:</b> Modulus operator checks remainder.</p>
 </div>
 <div>
-  <h1>Example 9</h1>
+  <h3>Example 9</h3>
   <p>Count numbers divisible by 3 or 5 between 1 to 100.</p>
   <pre><code>
 let count = 0;
@@ -1229,7 +1229,7 @@ console.log(count);
   <p><b>Why:</b> Logical OR checks both conditions.</p>
 </div>
 <div>
-  <h1>Example 10 (Break)</h1>
+  <h3>Example 10 (Break)</h3>
   <p>Stop loop at first multiple of 7.</p>
   <pre><code>
 for (let i = 1; i <= 100; i++) {
@@ -1243,7 +1243,7 @@ for (let i = 1; i <= 100; i++) {
   <p><b>Why:</b> break keyword terminates the loop.</p>
 </div>
 <div>
-  <h1>Example 11 (Continue)</h1>
+  <h3>Example 11 (Continue)</h3>
   <p>Skip multiples of 3.</p>
   <pre><code>
 for (let i = 1; i <= 20; i++) {
@@ -1257,7 +1257,7 @@ for (let i = 1; i <= 20; i++) {
   <p><b>Why:</b> continue skips current iteration.</p>
 </div>
 <div>
-  <h1>Example 12</h1>
+  <h3>Example 12</h3>
   <p>Print first 5 odd numbers only.</p>
   <pre><code>
 let count = 0;
@@ -1758,7 +1758,7 @@ Function expression ane arrow function hoisted nathi hota, etle call karta error
 ## Function Examples
 <hr>
 <div>
-  <h1> Example 1: </h1>
+  <h3> Example 1: </h3>
   <p>What's the difference between function declaration and function expression in terms of hoisting?</p>
   <p>
     <b>Answer:</b> Function declaration ma function declare pehla pan call thai sake,
@@ -1767,7 +1767,7 @@ Function expression ane arrow function hoisted nathi hota, etle call karta error
 </div>
 
 <div>
-  <h1> Example 2: </h1>
+  <h3> Example 2: </h3>
   <pre><code>
 greet();
 
@@ -1780,7 +1780,7 @@ function greet() {
 </div>
 
 <div>
-  <h1> Example 3: </h1>
+  <h3> Example 3: </h3>
   <p>Convert normal function to Arrow Function</p>
   <pre><code>
 function add(a, b) {
@@ -1797,7 +1797,7 @@ add(5, 23);
 </div>
 
 <div>
-  <h1> Example 4: </h1>
+  <h3> Example 4: </h3>
   <p>Identify what is parameters and what is arguments</p>
   <pre><code>
 function welcome(name) {
@@ -1814,7 +1814,7 @@ welcome("user");
 </div>
 
 <div>
-  <h1> Example 5: </h1>
+  <h3> Example 5: </h3>
   <p>How many parameters and arguments?</p>
   <pre><code>
 function temp(a, b, c) {
@@ -1827,7 +1827,7 @@ temp(1, 2);
 </div>
 
 <div>
-  <h1> Example 6: </h1>
+  <h3> Example 6: </h3>
   <p>Predict the output</p>
   <pre><code>
 function temp_user(name = "Guest") {
@@ -1844,7 +1844,7 @@ temp_user();
 </div>
 
 <div>
-  <h1> Example 7: </h1>
+  <h3> Example 7: </h3>
   <p>What is the <code>...</code> operator and why use it in function?</p>
   <pre><code>
 function number(...numbers) {
@@ -1861,7 +1861,7 @@ number(1, 2, 3, 4, 5);
 </div>
 
 <div>
-  <h1> Example 8: </h1>
+  <h3> Example 8: </h3>
   <p>Use rest parameters to accept any number of scores and return the total</p>
   <pre><code>
 function calculateTotal(...scores) {
@@ -1891,7 +1891,7 @@ let sumtotal = calculateTotalCorrect(10, 20, 30, 40, 50);
 </div>
 
 <div>
-  <h1> Example 9: </h1>
+  <h3> Example 9: </h3>
   <p>Fix the function using early return</p>
   <pre><code>
 function checkAge(age) {
@@ -1906,7 +1906,7 @@ function checkAge(age) {
 </div>
 
 <div>
-  <h1> Example 10: </h1>
+  <h3> Example 10: </h3>
   <p>What is the return value of below function?</p>
   <pre><code>
 function f() {
@@ -1919,14 +1919,14 @@ function f() {
 
 
 <div>
-  <h1> Example 11: </h1>
+  <h3> Example 11: </h3>
   <p>What does it mean when we say "functions are first-class citizens"?</p>
   <p><b>Ans:</b> Functions are treated like normal variables.</p>
   <p><b>Why:</b> They can be assigned, passed, and returned.</p>
 </div>
 
 <div>
-  <h1> Example 12: </h1>
+  <h3> Example 12: </h3>
   <p>Can you assign a function to a variable and call it?</p>
   <pre><code>
 let a = function () {
@@ -1939,7 +1939,7 @@ a();
 </div>
 
 <div>
-  <h1> Example 13: </h1>
+  <h3> Example 13: </h3>
   <p>Pass a function into another function and execute it.</p>
   <pre><code>
 function abcd(val) {
@@ -1955,14 +1955,14 @@ abcd(function () {
 </div>
 
 <div>
-  <h1> Example 14: </h1>
+  <h3> Example 14: </h3>
   <p>What is a higher-order function?</p>
   <p><b>Ans:</b> A function that takes or returns another function.</p>
   <p><b>Why:</b> It works with functions as values.</p>
 </div>
 
 <div>
-  <h1> Example 15: </h1>
+  <h3> Example 15: </h3>
   <p>Identify the higher-order function.</p>
   <pre><code>
 [1, 2, 3].map(function (x) {
@@ -1974,7 +1974,7 @@ abcd(function () {
 </div>
 
 <div>
-  <h1> Example 16: </h1>
+  <h3> Example 16: </h3>
   <p>Pure or impure function?</p>
   <pre><code>
 let total = 5;
@@ -1990,7 +1990,7 @@ num(3);
 </div>
 
 <div>
-  <h1> Example 17: </h1>
+  <h3> Example 17: </h3>
   <p>Convert example 16 into a pure function.</p>
   <pre><code>
 function num(total, num) {
@@ -2004,7 +2004,7 @@ num(5, 3);
 </div>
 
 <div>
-  <h1> Example 18: </h1>
+  <h3> Example 18: </h3>
   <p>What is Closure? When is it created?</p>
   <pre><code>
 function outer() {
@@ -2019,7 +2019,7 @@ function outer() {
 </div>
 
 <div>
-  <h1> Example 19: </h1>
+  <h3> Example 19: </h3>
   <p>What's logged?</p>
   <pre><code>
 function outer() {
@@ -2040,7 +2040,7 @@ counter();
 </div>
 
 <div>
-  <h1> Example 20: </h1>
+  <h3> Example 20: </h3>
   <p>Convert into an IIFE.</p>
   <pre><code>
 (function () {
@@ -2052,7 +2052,7 @@ counter();
 </div>
 
 <div>
-  <h1> Example 21: </h1>
+  <h3> Example 21: </h3>
   <p>Use of IIFE with real-world example.</p>
   <pre><code>
 let func = (function () {
@@ -2073,7 +2073,7 @@ let func = (function () {
 </div>
 
 <div>
-  <h1> Example 22: </h1>
+  <h3> Example 22: </h3>
   <p>What will be the output?</p>
   <pre><code>
 temp_var();
@@ -2087,7 +2087,7 @@ var temp_var = function () {
 </div>
 
 <div>
-  <h1> Example 23: </h1>
+  <h3> Example 23: </h3>
   <p>What will be the output?</p>
   <pre><code>
 temp_var();
