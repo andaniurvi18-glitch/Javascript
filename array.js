@@ -570,7 +570,104 @@ const sumOfSquares = numbers5
 .map(num => num * num)
 .reduce((sum, num) => sum + num, 0);
 
- 
+//find 
+// find tyare j use karvu ke jyare array mathi ek value find karvi hoy based on condition
+//find() return kare chhe array no element --> callback no return value nahi
+//never return what you return inside it
+// returns the array element itself -- not return array
+// .find() stops at the first match
+// It does not continue looping
+
+let product = ["Leptop","Mobile","Tablet","Desktop","Smart Watch"];
+let find_product = product.find ((item) => {
+  // console.log("can't find product"); // not Working Why??
+  if (item === "Mobile"){
+    return true;
+  }else if(item === "Tablet"){
+    return true;
+  }else {
+    return false;
+  }
+}); 
+
+// use case -- data ma thi ek value find karvi hoy based on condition
+// ex. product ma thi specifice product find karvo hoy based on name
+
+// find vs filter
+//Real-Life Scenario: Shopping Mall Security
+//Ypur are a security guard at a shopping mall 
+//Chack the list of visitors
+let people = ["Johan","Sara","Mike","anna","David","Sara"];
+// find --> You are looking for the first person named "sara" in the List an Stop Searching(Pehli var j male, bas e j and Agal check j na kare)
+let person = people.find((name) => name === "Sara");
+console.log(person);
+
+// filter --> you want to find all visitors named "Sara" in the List (all data check kare and list na end sudhi check kare)
+let AllSara = people.filter((name) => name === "Sara");
+console.log(AllSara);
+
+// some
+//check kare chhe ke array ma koi pan ek item codition satisfy kare chhe ke nahi
+// condition true aave tyare stop kare
+// some() vs find() --> some() can"t return you value its return true or false, find() return value of array
+// give ans in true and false
+let marks3 = [10, 20, 35, 90];
+let any = marks3.some((val) => {
+  if (val > 85) return true;
+  //if (val < 85) return "need improvement";
+});
+console.log(any)
+// use case -- ckeck if some product are out of stock in your cart 
+
+//every
+// check kare chhe ke array ma badha j items condition satisfy kare chhe ke nahi
+// true -- badha items condition match kare
+// false -- ek pan fail thay to
+let def = [20, 30, 90, 45];
+let num = def.every(function(val){
+    return val < 40;
+})
+ // use case --> check all student is pass or not
+
+ //some(), find(), filter(), every()
+ let products = ["Tablet","Mobile","Leptop","Mobile"]
+ //method --> condition --> output
+ //.some() --> item === "Mobile" --> true
+ //.find() --> item === "Mobile" --> "Mobile"
+ //.filter() --> item ==="Mobile" --> ["Mobile","Mobile"]
+ //.every() --> item === "Mobile" --> false
+
+ let find_product1 = products.every ((item) => {
+  // console.log("can't find product"); // not Working Why??
+  if (item === "Mobile"){
+    return true;
+  }
+}); 
+
+// Destructuring operator -- give value to variable (ex. we don't use every time arr1[1], just save it into variable let [ ,k]= arr1)
+let arr4 = [1, 2, 3, 4, 5]
+// let j = arr4[0];
+// let k = arr4[2];
+let [ j, , k] = arr4; // --> destructuring
+// let [j, , k] = arr;
+console.log(k);
+let user_data = ["test","test@gmail.com","Male","Surat"]
+let [name2,email,gender,city] = user_data
+console.log("name:", name2)
+console.log("Email:" ,email)
+console.log("Gender:",gender)
+console.log("City:", city)
+
+// spread oprator -- copy value from main array
+let arr8 = [1, 2, 3, 4, 5, 6, 7];
+// let arr4 = arr3 ; // - just give reference not copy valuse(when you change into arr4 that will be change arr3 too)
+let arr9 = [...arr8];
+// ... --> rest --> into function
+// ... --> spred --> into Array and object
+let temp_arr = [1,2,3];
+let temp_arr2 = [4,5,6];
+let mix_arr = [...temp_arr, ...temp_arr2];
+
 
 
 
