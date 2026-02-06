@@ -668,6 +668,191 @@ let temp_arr = [1,2,3];
 let temp_arr2 = [4,5,6];
 let mix_arr = [...temp_arr, ...temp_arr2];
 
+//<----------Examples 1 to 10------------------>
+
+// ## 1. `.find()` – First even number
+// **Real life:** Find first available even seat number
+
+const seats1 = [3, 5, 8, 10, 7];
+const firstEvenSeat = seats1.find(seat => seat % 2 === 0);
+
+// ## 2. `.some()` – Any even number?
+// **Real life:** Check if any VIP seat exists
+
+const seats = [3, 5, 7, 9];
+const hasEvenSeat = seats.some(seat => seat % 2 === 0);
+
+// ## 3. `.find()` – First passing mark
+// **Real life:** Find first student who passed
+
+const marks5 = [25, 35, 40, 60];
+const firstPass = marks5.find(mark => mark >= 40);
+
+// ## 4. `.some()` – Any failed student?
+// **Real life:** Check if re-test is needed
+
+const marks7 = [60, 70, 55, 30];
+const hasFail = marks7.some(mark => mark < 40);
+
+// ## 5. `.find()` – First affordable product
+// **Real life:** Shopping app price filter
+
+const prices7 = [1500, 1200, 800, 2000];
+const affordable1 = prices7.find(price => price <= 1000);
+
+// ## 6. `.some()` – Any discount item?
+// **Real life:** Show discount banner
+
+const prices9 = [500, 800, 1200, 300];
+const hasDiscountItem = prices9.some(price => price < 500);
+
+
+// ## 7. `.find()` – First long word
+// **Real life:** Auto-suggestion keyword
+
+const words7 = ['hi', 'hello', 'javascript', 'ok'];
+const longWord = words7.find(word => word.length > 5);
+
+// ## 8. `.some()` – Any empty input?
+// **Real life:** Form validation
+
+const inputs4 = ['name', 'email', '', 'password'];
+const hasEmpty = inputs4.some(input => input === '');
+
+// ## 9. `.find()` – First high transaction
+// **Real life:** Fraud detection
+
+const transactions6 = [200, 500, 1200, 3000, 400];
+const highTransaction = transactions6.find(amount => amount > 1000);
+
+// ## 10. `.some()` – System alert check ⭐
+// **Real life:** Check if any value exceeds limit
+
+const temperatures = [30, 32, 35, 42, 36];
+const isOverheated = temperatures.some(temp => temp > 40);
+
+//<----------Examples 1 to 20------------------>
+
+// ## create Readmd.md file and write the answers of all questions
+// ### Q1. Shopping List – Price Increase
+// Increase each price by ₹20 using `map()`.
+
+const prices8 = [100, 200, 300];
+
+// ### Q2. Exam Marks – Passing Students
+// Filter out only passing marks (>= 40).
+
+const marks9 = [35, 60, 45, 20, 80];
+
+// ### Q3. Attendance Check
+// Check if **any day** attendance is less than 75% using `some()`.
+
+const attendance = [80, 90, 70, 85];
+
+// ### Q4. Find First Discounted Item
+// Find the first price less than 500 using `find()`.
+
+const prices6 = [1200, 800, 450, 600];
+
+// ### Q5. Salary Calculation
+// 1. Keep salaries above 20,000
+// 2. Add bonus of 2,000
+// 3. Calculate total payout
+//    (Use `filter`, `map`, `reduce`)
+
+const salaries1 = [18000, 25000, 30000, 15000];
+
+// ### Q6. Product Quality Check
+// Check if **all products** have rating >= 4 using `every()`.
+
+const ratings = [4, 5, 4, 4];
+
+// ### Q7. Daily Expenses – Total
+// Calculate total expenses using `reduce()`.
+
+const expenses2 = [200, 150, 300, 100];
+
+// ### Q8. Scores Update
+// 1. Keep scores above 50
+// 2. Add 10 bonus points
+
+const scores3 = [45, 60, 80, 30, 70];
+
+// ### Q9. Array Destructuring – Top Scores
+// Extract the first two scores into variables.
+
+const scores4 = [95, 90, 85, 80];
+
+// ### Q10. Shopping Cart Merge
+// Merge two carts using the **spread operator**.
+
+const cart1 = [200, 400];
+const cart2 = [300, 500];
+
+// ### Q11. Expense Validation
+// Check if **all expenses** are below 1000 using `every()`.
+
+const expenses = [200, 450, 800, 1200];
+
+// ### Q12. Transaction Analysis
+// 1. Find first transaction above 1000
+// 2. Check if any transaction is negative
+
+const transactions4 = [500, -200, 1200, 300];
+
+// ### Q13. Student Result Summary
+// 1. Keep passing marks (>= 40)
+// 2. Calculate average marks
+
+const marks8 = [30, 45, 60, 25, 80];
+
+// ### Q14. Temperature Alert System
+// 1. Check if any temperature exceeds 40
+// 2. Check if all temperatures are above 20
+
+const temps = [22, 30, 45, 28];
+
+// ### Q15. Spread + Reduce Combo 
+// Combine two arrays and find the total sum.
+
+const a = [1, 2, 3];
+const c = [4, 5, 6];
+
+
+// ### Q16. Bonus Eligibility
+// Check if **every score** is above the class average.
+
+const scores7 = [60, 70, 80, 90];
+
+// ### Q17. First Valid Input
+// Find the first non-empty input.
+
+const inputs7 = ['', '', 'name', 'email'];
+
+// ### Q18. Salary Spread
+// Create a new salary list by copying existing salaries and adding a new one.
+
+const salaries = [20000, 30000, 40000];
+
+// ### Q19. Performance Check
+// 1. Check if any performance score is below 50
+// 2. Check if all scores are above 60
+
+const performance = [55, 65, 45, 80];
+
+// ### Q20. Interview Finisher 
+// 1. Merge arrays
+// 2. Keep even numbers
+// 3. Square them
+// 4. Find total sum
+
+const x = [1, 2, 3];
+const y = [4, 5, 6];
+
+
+
+
+
 
 
 
