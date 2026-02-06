@@ -3187,11 +3187,282 @@ let mix_arr = [...temp_arr1, ...temp_arr2];
 
 <hr/>
 
+=============================== 1 to 10 =====================================
 
+<h1>JavaScript .find() & .some() – Explained with Answer & Why</h1>
 
+<h2>1. .find() – First even number</h2>
+<pre><code>
+const seats = [3, 5, 8, 10, 7];
+const firstEvenSeat = seats.find(seat => seat % 2 === 0);
+</code></pre>
+<p><b>Answer:</b> 8</p>
+<p><b>Why:</b> <code>find()</code> condition satisfy karto pehlo element return kare chhe.</p>
 
+<h2>2. .some() – Any even number?</h2>
+<pre><code>
+const seats = [3, 5, 7, 9];
+const hasEvenSeat = seats.some(seat => seat % 2 === 0);
+</code></pre>
+<p><b>Answer:</b> false</p>
+<p><b>Why:</b> Koi pan even number nathi, etle <code>some()</code> false aape.</p>
 
+<h2>3. .find() – First passing mark</h2>
+<pre><code>
+const marks = [25, 35, 40, 60];
+const firstPass = marks.find(mark => mark >= 40);
+</code></pre>
+<p><b>Answer:</b> 40</p>
+<p><b>Why:</b> 40 pehli value chhe je passing condition meet kare.</p>
 
+<h2>4. .some() – Any failed student?</h2>
+<pre><code>
+const marks = [60, 70, 55, 30];
+const hasFail = marks.some(mark => mark < 40);
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> 30 fail chhe, etle <code>some()</code> true return kare.</p>
+
+<h2>5. .find() – First affordable product</h2>
+<pre><code>
+const prices = [1500, 1200, 800, 2000];
+const affordable = prices.find(price => price <= 1000);
+</code></pre>
+<p><b>Answer:</b> 800</p>
+<p><b>Why:</b> 800 pehli price chhe je 1000 karta ochhi chhe.</p>
+
+<h2>6. .some() – Any discount item?</h2>
+<pre><code>
+const prices = [500, 800, 1200, 300];
+const hasDiscountItem = prices.some(price => price < 500);
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> 300 discount price chhe, etle banner show thase.</p>
+
+<h2>7. .find() – First long word</h2>
+<pre><code>
+const words = ['hi', 'hello', 'javascript', 'ok'];
+const longWord = words.find(word => word.length > 5);
+</code></pre>
+<p><b>Answer:</b> "javascript"</p>
+<p><b>Why:</b> Aa pehlo word chhe jeni length 5 karta vadhu chhe.</p>
+
+<h2>8. .some() – Any empty input?</h2>
+<pre><code>
+const inputs = ['name', 'email', '', 'password'];
+const hasEmpty = inputs.some(input => input === '');
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> Form ma ek empty field chhe, validation fail thase.</p>
+
+<h2>9. .find() – First high transaction</h2>
+<pre><code>
+const transactions = [200, 500, 1200, 3000, 400];
+const highTransaction = transactions.find(amount => amount > 1000);
+</code></pre>
+<p><b>Answer:</b> 1200</p>
+<p><b>Why:</b> 1200 pehli transaction chhe je limit cross kare chhe.</p>
+
+<h2>10. .some() – System alert check ⭐</h2>
+<pre><code>
+const temperatures = [30, 32, 35, 42, 36];
+const isOverheated = temperatures.some(temp => temp > 40);
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> 42 temperature limit cross kare chhe, system alert aavse.</p>
+
+============================== 1 To 20 ============================================
+
+<h1>JavaScript Array Methods – Solved Examples with Explanation</h1>
+
+<h2>Q1. Shopping List – Price Increase</h2>
+<pre><code>
+const prices = [100, 200, 300];
+const updatedPrices = prices.map(p => p + 20);
+</code></pre>
+<p><b>Answer:</b> [120, 220, 320]</p>
+<p><b>Why:</b> <code>map()</code> darek element par operation kari navo array banave chhe.</p>
+
+<h2>Q2. Exam Marks – Passing Students</h2>
+<pre><code>
+const marks = [35, 60, 45, 20, 80];
+const passing = marks.filter(m => m >= 40);
+</code></pre>
+<p><b>Answer:</b> [60, 45, 80]</p>
+<p><b>Why:</b> <code>filter()</code> condition true hoy e elements ne j rakhe chhe.</p>
+
+<h2>Q3. Attendance Check</h2>
+<pre><code>
+const attendance = [80, 90, 70, 85];
+const hasLowAttendance = attendance.some(a => a < 75);
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> <code>some()</code> ek pan value condition satisfy kare to true aape.</p>
+
+<h2>Q4. Find First Discounted Item</h2>
+<pre><code>
+const prices = [1200, 800, 450, 600];
+const discountedItem = prices.find(p => p < 500);
+</code></pre>
+<p><b>Answer:</b> 450</p>
+<p><b>Why:</b> <code>find()</code> condition match karto pehlo element return kare.</p>
+
+<h2>Q5. Salary Calculation</h2>
+<pre><code>
+const salaries = [18000, 25000, 30000, 15000];
+
+const totalPayout = salaries
+  .filter(s => s > 20000)
+  .map(s => s + 2000)
+  .reduce((sum, s) => sum + s, 0);
+</code></pre>
+<p><b>Answer:</b> 59000</p>
+<p><b>Why:</b> 
+filter → high salary  
+map → bonus add  
+reduce → total sum</p>
+
+<h2>Q6. Product Quality Check</h2>
+<pre><code>
+const ratings = [4, 5, 4, 4];
+const allGood = ratings.every(r => r >= 4);
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> <code>every()</code> badha elements condition satisfy kare to true aape.</p>
+
+<h2>Q7. Daily Expenses – Total</h2>
+<pre><code>
+const expenses = [200, 150, 300, 100];
+const totalExpenses = expenses.reduce((a, b) => a + b, 0);
+</code></pre>
+<p><b>Answer:</b> 750</p>
+<p><b>Why:</b> <code>reduce()</code> array ne single value ma convert kare.</p>
+
+<h2>Q8. Scores Update</h2>
+<pre><code>
+const scores = [45, 60, 80, 30, 70];
+const updatedScores = scores
+  .filter(s => s > 50)
+  .map(s => s + 10);
+</code></pre>
+<p><b>Answer:</b> [70, 90, 80]</p>
+<p><b>Why:</b> Pehla pass scores select, pachi bonus add.</p>
+
+<h2>Q9. Array Destructuring – Top Scores</h2>
+<pre><code>
+const scores = [95, 90, 85, 80];
+const [first, second] = scores;
+</code></pre>
+<p><b>Answer:</b> first = 95, second = 90</p>
+<p><b>Why:</b> Destructuring thi direct variables ma values store thay.</p>
+
+<h2>Q10. Shopping Cart Merge</h2>
+<pre><code>
+const cart1 = [200, 400];
+const cart2 = [300, 500];
+const mergedCart = [...cart1, ...cart2];
+</code></pre>
+<p><b>Answer:</b> [200, 400, 300, 500]</p>
+<p><b>Why:</b> Spread operator array merge karva use thay.</p>
+
+<h2>Q11. Expense Validation</h2>
+<pre><code>
+const expenses = [200, 450, 800, 1200];
+const validExpenses = expenses.every(e => e < 1000);
+</code></pre>
+<p><b>Answer:</b> false</p>
+<p><b>Why:</b> 1200 < 1000 nathi, etle every() false.</p>
+
+<h2>Q12. Transaction Analysis</h2>
+<pre><code>
+const transactions = [500, -200, 1200, 300];
+
+const firstBigTransaction = transactions.find(t => t > 1000);
+const hasNegative = transactions.some(t => t < 0);
+</code></pre>
+<p><b>Answer:</b> First &gt;1000 = 1200, Negative = true</p>
+<p><b>Why:</b> find() pehla match, some() ek pan negative check kare.</p>
+
+<h2>Q13. Student Result Summary</h2>
+<pre><code>
+const marks = [30, 45, 60, 25, 80];
+
+const passingMarks = marks.filter(m => m >= 40);
+const average =
+  passingMarks.reduce((a, b) => a + b, 0) / passingMarks.length;
+</code></pre>
+<p><b>Answer:</b> Average = 61.66</p>
+<p><b>Why:</b> Fail marks remove kari average nikade.</p>
+
+<h2>Q14. Temperature Alert System</h2>
+<pre><code>
+const temps = [22, 30, 45, 28];
+
+const highTemp = temps.some(t => t > 40);
+const allAbove20 = temps.every(t => t > 20);
+</code></pre>
+<p><b>Answer:</b> High temp = true, All above 20 = true</p>
+<p><b>Why:</b> some() ek condition, every() badhi condition.</p>
+
+<h2>Q15. Spread + Reduce Combo</h2>
+<pre><code>
+const a = [1, 2, 3];
+const b = [4, 5, 6];
+
+const totalSum = [...a, ...b].reduce((x, y) => x + y, 0);
+</code></pre>
+<p><b>Answer:</b> 21</p>
+<p><b>Why:</b> Spread merge kare, reduce total nikade.</p>
+
+<h2>Q16. Bonus Eligibility</h2>
+<pre><code>
+const scores = [60, 70, 80, 90];
+
+const avg = scores.reduce((a, b) => a + b, 0) / scores.length;
+const eligible = scores.every(s => s > avg);
+</code></pre>
+<p><b>Answer:</b> true</p>
+<p><b>Why:</b> badha scores average karta mota chhe.</p>
+
+<h2>Q17. First Valid Input</h2>
+<pre><code>
+const inputs = ['', '', 'name', 'email'];
+const firstValid = inputs.find(i => i !== '');
+</code></pre>
+<p><b>Answer:</b> "name"</p>
+<p><b>Why:</b> find() pehlo non-empty value aape.</p>
+
+<h2>Q18. Salary Spread</h2>
+<pre><code>
+const salaries = [20000, 30000, 40000];
+const newSalaries = [...salaries, 50000];
+</code></pre>
+<p><b>Answer:</b> [20000, 30000, 40000, 50000]</p>
+<p><b>Why:</b> Spread thi original array copy thay.</p>
+
+<h2>Q19. Performance Check</h2>
+<pre><code>
+const performance = [55, 65, 45, 80];
+
+const below50 = performance.some(p => p < 50);
+const above60 = performance.every(p => p > 60);
+</code></pre>
+<p><b>Answer:</b> Below 50 = true, Above 60 = false</p>
+<p><b>Why:</b> 45 below chhe ane badha 60 upar nathi.</p>
+
+<h2>Q20. Interview Finisher</h2>
+Merge → Even → Square → Total</p>
+<pre><code>
+const x = [1, 2, 3];
+const y = [4, 5, 6];
+
+const finalSum = [...x, ...y]
+  .filter(n => n % 2 === 0)
+  .map(n => n * n)
+  .reduce((a, b) => a + b, 0);
+</code></pre>
+<p><b>Answer:</b> 56</p>
+<p><b>Why:</b> 
 
 </body>
 </html>
